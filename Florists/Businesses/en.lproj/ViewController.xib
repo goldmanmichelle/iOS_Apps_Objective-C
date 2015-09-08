@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="allBusinessesButton" destination="8" id="26"/>
+                <outlet property="businessTableView" destination="15" id="25"/>
+                <outlet property="view" destination="6" id="7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="15">
+                    <rect key="frame" x="0.0" y="108" width="320" height="265"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="265" id="143"/>
+                    </constraints>
+                    <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="30"/>
+                        <outlet property="delegate" destination="-1" id="31"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Florists" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.91593090860000004" green="0.81112710099999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="98"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="35"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" misplaced="YES" image="blackFlowerVine.png" translatesAutoresizingMaskIntoConstraints="NO" id="67">
+                    <rect key="frame" x="-2" y="47" width="320" height="66"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="94"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                    <rect key="frame" x="53" y="399" width="215" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="108"/>
+                        <constraint firstAttribute="width" constant="215" id="109"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="25"/>
+                    <state key="normal" title="All Businesses">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loadBusinesses:" destination="-1" eventType="touchUpInside" id="27"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.91593090860000004" green="0.81112710099999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="15" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="18"/>
+                <constraint firstItem="15" firstAttribute="trailing" secondItem="6" secondAttribute="trailing" id="20"/>
+                <constraint firstItem="35" firstAttribute="top" secondItem="6" secondAttribute="top" id="40"/>
+                <constraint firstItem="35" firstAttribute="trailing" secondItem="6" secondAttribute="trailing" id="41"/>
+                <constraint firstItem="35" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="42"/>
+                <constraint firstItem="8" firstAttribute="centerX" secondItem="15" secondAttribute="centerX" id="110"/>
+                <constraint firstItem="67" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="126"/>
+                <constraint firstItem="67" firstAttribute="top" secondItem="6" secondAttribute="top" id="127"/>
+                <constraint firstItem="67" firstAttribute="trailing" secondItem="6" secondAttribute="trailing" id="128"/>
+                <constraint firstItem="15" firstAttribute="centerY" secondItem="6" secondAttribute="centerY" id="142"/>
+                <constraint firstAttribute="bottom" secondItem="8" secondAttribute="bottom" constant="26" id="144"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="blackFlowerVine.png" width="743" height="326"/>
+    </resources>
+</document>
