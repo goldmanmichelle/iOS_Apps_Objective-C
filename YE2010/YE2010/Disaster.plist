@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Resource</key>
+	<array>
+		<key>URLS</key>
+		<string>http://emergency.cdc.gov/disasters/</string>
+		<string>http://www.factmonster.com/ipka/A0775896.html</string>
+		<string>http://www.huffingtonpost.com/news/natural-disasters/</string>
+		<string>http://www.reuters.com/subjects/natural-disasters</string>
+		<string>http://www.break.com/c/nature-videos/natural-disasters/</string>
+	</array>
+</dict>
+</plist>
